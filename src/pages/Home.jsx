@@ -2,6 +2,7 @@ import React from 'react';
 import { Container , Row , Col } from 'reactstrap';
 
 import Helmet from '../components/Helmet/Helmet';
+import AboutSection from '../components/UI/AboutSection';
 import FindCarForm from '../components/UI/FindCarForm';
 import HeroSlider from '../components/UI/HeroSlider';
 
@@ -32,6 +33,12 @@ const Home = () => {
             </Container>
         </div>
     </section>
+
+
+    {/* ============== ABOUT SECTION ============== */}
+
+    <AboutSection></AboutSection>
+    
     </Helmet>
 };
 
