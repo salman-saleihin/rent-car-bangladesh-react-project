@@ -5,6 +5,7 @@ import Helmet from '../components/Helmet/Helmet';
 import AboutSection from '../components/UI/AboutSection';
 import FindCarForm from '../components/UI/FindCarForm';
 import HeroSlider from '../components/UI/HeroSlider';
+import ServicesList from '../components/UI/ServicesList';
 
 
 const Home = () => {
@@ -38,7 +39,22 @@ const Home = () => {
     {/* ============== ABOUT SECTION ============== */}
 
     <AboutSection></AboutSection>
-    
+
+    {/* ============== Services SECTION ============== */}
+
+    <section>
+        <Container>
+            <Row>
+                <Col lg='12' className='mb-5 text-center'>
+                    <h6 className="section__subtitle"> See Our </h6>
+                    <h2 className="section__title">Popular Services</h2>
+                </Col>
+
+                <ServicesList></ServicesList>
+            </Row>
+        </Container>
+    </section>
+
     </Helmet>
 };
 
