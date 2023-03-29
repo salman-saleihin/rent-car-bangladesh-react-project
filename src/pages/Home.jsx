@@ -7,6 +7,9 @@ import FindCarForm from '../components/UI/FindCarForm';
 import HeroSlider from '../components/UI/HeroSlider';
 import ServicesList from '../components/UI/ServicesList';
 
+import carData from '../assets/data/carData';
+import CarItem from '../components/UI/CarItem';
+
 
 const Home = () => {
     return <Helmet title='Home'>
@@ -51,6 +54,26 @@ const Home = () => {
                 </Col>
 
                 <ServicesList></ServicesList>
+            </Row>
+        </Container>
+    </section>
+
+    {/* ============== CAR OFFER SECTION ============== */}
+
+    <section>
+        <Container>
+            <Row>
+                <Col lg='12' className='mb-5 text-center'>
+                    <h6 className="section__subtitle">Come With</h6>
+                    <h2 className="section__title"> Special Offers</h2>
+                </Col>
+
+                {
+                    carData.slice(0 , 6).map((item) => (
+                        <CarItem item={item} key={item.id} />
+                    ))
+                }
+
             </Row>
         </Container>
     </section>
