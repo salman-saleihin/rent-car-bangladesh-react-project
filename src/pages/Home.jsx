@@ -10,6 +10,7 @@ import ServicesList from '../components/UI/ServicesList';
 import carData from '../assets/data/carData';
 import CarItem from '../components/UI/CarItem';
 import BecomeDriverSection from '../components/UI/BecomeDriverSection';
+import Testimonial from '../components/UI/Testimonial';
 
 
 const Home = () => {
@@ -82,6 +83,22 @@ const Home = () => {
     {/* ============== BECOME A DRIVER SECTION ============== */}
 
     <BecomeDriverSection></BecomeDriverSection>
+
+
+    {/* ============== BECOME A DRIVER SECTION ============== */}
+
+    <section>
+        <Container>
+            <Row>
+                <Col lg='12' className='mb-4 text-center'>
+                    <h6 className="section__subtitle">Our Client Says</h6>
+                    <h2 className="section__title">Testimonials</h2>
+                </Col>
+
+                <Testimonial></Testimonial>
+            </Row>
+        </Container>
+    </section>
 
     </Helmet>
 };
