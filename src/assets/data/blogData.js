@@ -20,7 +20,7 @@ const blogData = [
   {
     id: 2,
     title: "If your car battery is down",
-    author: "Saleihin Khan",
+    author: "Sharaban Tohura",
     date: "11 Dec, 2022",
     time: "9pm",
     imgUrl: img02,
