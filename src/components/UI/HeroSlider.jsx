@@ -23,7 +23,7 @@ const HeroSlider = () => {
                     <div className="slider__content">
 
                         <h4 className="text-light mb-3">
-                            For Rent BDT.8500 per Day
+                            For Rent Starting From BDT.5200 per Day 
                         </h4>
 
                         <h1 className='text-light mb-4'>Reserve now and get 50% off</h1>
@@ -43,7 +43,7 @@ const HeroSlider = () => {
                     <div className="slider__content">
 
                         <h4 className="text-light mb-3">
-                            For Rent BDT.8500 per Day
+                        For Rent Starting From BDT.5200 per Day 
                         </h4>
 
                         <h1 className='text-light mb-4'>Reserve now and get 50% off</h1>
@@ -63,7 +63,7 @@ const HeroSlider = () => {
                     <div className="slider__content">
 
                         <h4 className="text-light mb-3">
-                            For Rent BDT.8500 per Day
+                        For Rent Starting From BDT.5200 per Day 
                         </h4>
 
                         <h1 className='text-light mb-4'>Reserve now and get 50% off</h1>
