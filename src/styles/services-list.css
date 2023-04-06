@@ -16,3 +16,11 @@
     color: #f9a826;
     cursor: pointer;
 }
+
+@media only screen and (max-width: 768px) {
+
+    .service__item h6{
+        font-size: 1.1rem;
+    }
+    
+}
