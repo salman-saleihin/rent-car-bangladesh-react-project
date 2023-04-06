@@ -21,7 +21,7 @@ const BlogItem = ({item}) => {
 
     const { imgUrl , title , author , date , description , time } = item 
 
-    return <Col lg='4' md='4' sm='6' className='mb-5'> 
+    return <Col lg='4' md='6' sm='6' className='mb-5'> 
         <div className="blog__item">
             <img src={imgUrl} alt="" className='w-100' />
 
@@ -29,7 +29,7 @@ const BlogItem = ({item}) => {
                 <Link to={`/blogs/${title}`} className="blog__title"> 
                         {title} 
                 </Link>
-            </div>
+            
 
             <p className="section__description  p-3">
                 {
@@ -59,7 +59,7 @@ const BlogItem = ({item}) => {
 
 
             </div>
-
+            </div>
         </div>
     </Col>
 }
