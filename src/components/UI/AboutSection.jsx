@@ -4,8 +4,14 @@ import { Container , Row , Col } from 'reactstrap';
 import aboutImg from "../../assets/all-images/cars-img/bmw-offer.png" ;
 
 
-const AboutSection = () => {
-    return <section className='about__section'>
+const AboutSection = ({aboutClass}) => {
+    return <section 
+    className='about__section' 
+    style={ aboutClass === 'aboutPage'
+        ? {marginTop: '0px'} 
+        : {marginTop: '280px'}
+      }
+     >
         <Container>
             <Row>
                 <Col lg='6' md='6'>
