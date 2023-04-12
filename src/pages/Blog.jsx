@@ -1,11 +1,26 @@
 import React from 'react';
+import { Container , Row } from 'reactstrap';
+import Helmet from '../components/Helmet/Helmet';
+import CommonSection from "../components/UI/CommonSection" ;
+import BlogList from '../components/UI/BlogList';
+
 
 const Blog = () => {
-    return (
-        <div>
-            <h1>Blog Landing Page</h1>
-        </div>
-    );
+    return <Helmet title="Blogs">
+        <CommonSection title="Blogs"></CommonSection>
+            <section>
+                <Container>
+
+                    <Row>
+                        <BlogList />
+                        <BlogList />
+                    </Row>
+
+                </Container>
+            </section>
+
+       
+    </Helmet>
 };
 
-export default Blog;
+export default Blog; 

@@ -42,7 +42,10 @@
 
     }
 
-    .booking__form input , .textarea , .booking__form select{
+    .booking__form input , 
+    .textarea , 
+    .booking__form select{
+
         font-size: 0.8rem;
     }
-}
+} 

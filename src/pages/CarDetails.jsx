@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import carData from "../assets/data/carData" ;
 import { Container , Row , Col } from 'reactstrap';
@@ -13,6 +13,12 @@ const CarDetails = () => {
     const {slug} = useParams()
 
     const singleCarItem = carData.find( item => item.carName === slug )
+
+    useEffect(()=> {
+
+        window.scrollTo(0, 0);
+
+    }, [singleCarItem]) ; 
 
 
     return <Helmet title={singleCarItem.carName} >
