@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { Container , Row , Col , Form , FormGroup , Input } from 'reactstrap';
 import Helmet from '../components/Helmet/Helmet';
 
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import blogData from '../assets/data/blogData';
 
 import "../styles/blog-details.css" ;
@@ -10,6 +10,8 @@ import "../styles/blog-details.css" ;
 import cava1 from "../assets/all-images/cava-1.jpg" ;
 import commentImg from "../assets/all-images/cava-2.jpg" ;
 import cava3 from "../assets/all-images/cava-3.jpg" ;
+
+
 
 
 
@@ -27,8 +29,8 @@ const BlogDetails = () => {
         <Container>
             <Row>
                 <Col lg='8' md='6' >
-                        <div className="blog__details">
-                            <img src={blog.imgUrl} alt="" />
+                        <div className="blog__details" >
+                            <img src={blog.imgUrl} alt="" className='w-100'/>
                             <h2 className='section__title'>{blog.title}</h2>
 
                             <div className="blog__publisher d-flex align-items-center mb-4 gap-4">
@@ -104,6 +106,22 @@ const BlogDetails = () => {
                         </div>
                              
                     </div>
+                </Col>
+
+                <Col lg='4' md='4'>
+                    <div className="recent__post mb-4">
+                        <h5 className="fw-bold">Recent Posts</h5>
+                    </div>
+                    {
+                        blogData.map((item) => (
+                            <div className="recent__blog-post mb-4" key={item.id}>
+                                <div className="recent__blog-item d-flex gap-3">
+                                        <img src={item.imgUrl} alt="" className='w-25 rounded-2'/>
+                                        <h6><Link to={`/blogs/${item.title}`}>{item.title}</Link></h6>
+                                </div>
+                            </div>
+                        ))
+                    }
                 </Col>
             </Row>
         </Container>
