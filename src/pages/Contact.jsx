@@ -81,7 +81,6 @@ const Contact = () => {
                                             ))
                                         }
                                     </div>
-
                                 </div>
                         </Col>
                     </Row>
